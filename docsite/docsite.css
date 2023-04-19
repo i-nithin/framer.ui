@@ -1,0 +1,112 @@
+.sidebar{
+    position: sticky;
+    top: 4.063rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+    border-right: 1px solid var(--gray-300);
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;    
+}
+
+   
+.sidebar::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+background-color: var(--gray-500)
+}
+
+.d-grid-sidebar-1fr{
+    display: grid;
+    grid-template-columns: minmax(0, 10rem) 1fr;
+    position: relative;
+    top: 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebarList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.list-item{
+    padding: 0.313rem .5rem;
+    font-size: 0.875rem;
+}
+
+.list-item:hover{
+    border-radius: 5px;
+    background-color:var(--gray-200);
+}
+.list-item.active {
+    border-radius: 5px;
+    border-right: 3px solid var(--primary-color-600);
+    background-color: var(--gray-300);
+}
+
+.sidebarList > li{
+    padding:1rem;  
+}
+
+.sidebarList>li:hover{
+    background-color: var(--gray-200);
+}
+
+.actualExamplesContainer{
+    width: 100%;
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #f8f8fb;
+    align-items: center;
+    gap: 1.25rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.text-code{
+    background-color: var(--gray-200);
+    border-radius: 6px;
+    padding: 3px;
+    font-size: 13px;
+    border: 1px solid var(--gray-400);
+}
+#menuBtn{
+    display:none;
+}
+
+.navbar-img{
+    max-width: 15rem;
+}
+@media screen and (max-width: 500px) {
+    
+    .sidebar {
+      display: none;
+      padding: 1rem;
+      position: fixed;
+      z-index: 2;
+
+      background-color: var(--ternary-color);
+      transition: all .75s ease;
+      overflow-y:scroll;
+    }
+    .list-item{
+        font-size: 1.2rem;
+        padding: .8rem;
+    }
+    .d-grid-sidebar-1fr{
+        display: grid;
+        grid-template-columns:auto;
+    }
+    #menuBtn{
+        display: block;
+    }
+}

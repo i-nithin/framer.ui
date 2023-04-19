@@ -1,0 +1,54 @@
+.fixed-bottom-left{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.fixed-top-left{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.fixed-bottom-right{
+    position: fixed;
+    right: 60px;
+    bottom: 20px;
+}
+
+.fixed-bottom-center{
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    bottom:0;
+    transform: translate(-50%, -50%);
+}
+
+.toast{
+    min-width: 350px;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: .5rem  ;
+    display: flex;
+}
+
+.toast-msg{
+    padding: 8px 1rem;
+    display: flex;
+    gap: 5px;
+}
+
+.toast-clear{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.toast-link{
+    text-decoration: none;
+    padding: 4px 9px;
+    border-radius: 3px;
+    transition: .5s ease;
+    margin-right: 5px;
+}
+.toast-link:hover{
+    background: var(--primary-color-200);
+    color:var(--primary-color-600) ;
+}

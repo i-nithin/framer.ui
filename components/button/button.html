@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>framer.ui Button</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://neonui.netlify.app/css/main.css" />
+    <script src="/js/index.js" defer></script>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/docsite/docsite.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/index.html">
+          <div class="nav-logo">framer.ui</div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="/docsite/docsite.html">Documentation</a></li>
+          <li>
+            <a target="_blank" href="https://github.com/i-nithin/framer.ui"
+              >Github</a
+            >
+          </li>
+          <li><button id="menuBtn" class="material-icons">menu</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="d-grid-sidebar-1fr">
+      <aside>
+        <div class="sidebar">
+          <ul class="sidebarList">
+            <a class="list-item" href="/docsite/docsite.html">Installation</a>
+            <a class="list-item" href="/components/alert/alert.html">Alert</a>
+            <a class="list-item" href="/components/avatar/avatar.html"
+              >Avatar</a
+            >
+            <a class="list-item" href="/components/badge/badge.html">Badge</a>
+            <a class="list-item active" href="/components/button/button.html"
+              >Button</a
+            >
+            <a class="list-item" href="/components/card/card.html">Card</a>
+            <a class="list-item" href="/components/image/image.html">Image</a>
+            <a class="list-item" href="/components/input/input.html">Input</a>
+            <a
+              class="list-item"
+              href="/components/textUtilities/textUtilities.html"
+              >Text Utilities</a
+            >
+            <a class="list-item" href="/components/toast/toast.html">Toast</a>
+            <a class="list-item" href="/components/list/list.html">List</a>
+            <a class="list-item" href="/components/ratings/ratings.html"
+              >Ratings</a
+            >
+            <a class="list-item" href="/components/navigation/navigation.html"
+              >Navigation</a
+            >
+            <a class="list-item" href="/components/modal/modal.html">Modal</a>
+            <a class="list-item" href="/components/grid/grid.html"
+              >Simple grid</a
+            >
+            <a class="list-item" href="/components/slider/slider.html"
+              >Slider</a
+            >
+          </ul>
+        </div>
+      </aside>
+      <main class="p-2">
+        <h1>Buttons</h1>
+        <p>
+          A button means an operation or action. Clicking a button will trigger
+          corresponding logic.
+        </p>
+
+        <h2>Primary buttons</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn-link">Link</button>
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3cac42e8de00130a6eb9"
+          style="width: 100%; height: 125px"
+          frameborder="0"
+        ></iframe>
+
+        <h2>Outlined buttons</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <button class="btn btn-outline">Outline</button>
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3ce442e8de00130a6eba"
+          style="width: 100%; height: 99px"
+          frameborder="0"
+        ></iframe>
+
+        <h2>Icon buttons</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <button class="btn-icon">
+            <span class="material-icons">delete</span>
+          </button>
+          <button class="btn-icon">
+            <span class="material-icons">share</span>
+          </button>
+          <button class="btn-icon">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+          <button class="btn-icon">
+            <span class="material-icons">send</span>
+          </button>
+        </div>
+
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3d2542e8de00130a6ebb"
+          style="width: 100%; height: 138px"
+          frameborder="0"
+        ></iframe>
+
+        <h2>Floating action button</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <button
+            class="btn-floating bg-red-200 square-md color-red-600 b-0 br-round"
+          >
+            <span class="material-icons">edit</span>
+          </button>
+          <button
+            class="btn-floating bg-green-200 square-md color-green-600 b-0 br-round"
+          >
+            <span class="material-icons">add</span>
+          </button>
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3d5b42e8de00130a6ebc"
+          style="width: 100%; height: 125px"
+          frameborder="0"
+        ></iframe>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+.badge-parent{
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    height: fit-content;
+}
+
+.badge-with-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--red-600);
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    left: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translate(-50% , -50%);
+}
+
+.badge-text{
+    padding: 2px 5px;
+    font-size: 0.938rem;
+    border-radius: 0.938rem;
+    display: flex;
+    border: 2px solid var(--gray-200);
+    max-width: fit-content;
+}
+
+
+.badgesFor-status{
+    position: absolute;
+    padding: 5px;
+    border-radius: 0.938rem;
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+}
+
+.badgesFor-status-md{
+    width: 1.2rem;
+    height: 1.2rem;
+   
+}
+.badgesFor-status-lg{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3.5px solid white;
+}
+
+.badge-text .badge-icon {
+    margin-right: 5px;
+    font-size: 1.125rem;
+    line-height: inherit;
+    
+}

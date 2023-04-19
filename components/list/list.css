@@ -1,0 +1,19 @@
+.stacked-list{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.stacked-list > li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+}
+.row-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}

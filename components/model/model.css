@@ -1,0 +1,31 @@
+.modal-overlay{
+    background-color: #2b2b2bb0;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    display: none;
+   
+}
+.modal-position-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+}
+.modal{
+    padding: 2.5rem;
+    max-width: 28.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.top-right-minus{
+    position:absolute;
+    top: 0px;
+    right: -40px;
+    background: transparent;
+    border: none;
+}

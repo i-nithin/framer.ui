@@ -1,0 +1,40 @@
+.rating-container{
+    direction: rtl;
+}
+.rating-container input {
+    display: none;
+}
+
+.rating-container label {
+    display: inline-block;
+    width: 1.875rem;
+    position: relative;
+    cursor: pointer;
+    top:-1.125rem;
+}
+
+.rating-container label::before {
+    content: '\2605';
+    font-size: 2rem;
+    display: inline-block;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.rating-container label::after {
+    content: '\2605';
+    font-size: 2rem;
+    display: inline-block;
+    position:absolute;
+    top:0;
+    left: 0;
+    color: var(--primary-color-600);
+    opacity: 0;
+}
+
+.rating-container label:hover:after,
+.rating-container label:hover ~ label:after,
+.rating-container input:checked ~ label:after {
+    opacity: 1;
+}

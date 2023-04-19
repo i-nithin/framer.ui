@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>framer.ui Modal</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://neonui.netlify.app/css/main.css" />
+    <script src="/js/index.js" defer></script>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/docsite/docsite.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/index.html">
+          <div class="nav-logo">framer.ui</div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="/docsite/docsite.html">Documentation</a></li>
+          <li>
+            <a target="_blank" href="https://github.com/i-nithin/framer.ui"
+              >Github</a
+            >
+          </li>
+          <li><button id="menuBtn" class="material-icons">menu</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="d-grid-sidebar-1fr">
+      <aside>
+        <div class="sidebar">
+          <ul class="sidebarList">
+            <a class="list-item" href="/docsite/docsite.html">Installation</a>
+            <a class="list-item" href="/components/alert/alert.html">Alert</a>
+            <a class="list-item" href="/components/avatar/avatar.html"
+              >Avatar</a
+            >
+            <a class="list-item" href="/components/badge/badge.html">Badge</a>
+            <a class="list-item" href="/components/button/button.html"
+              >Button</a
+            >
+            <a class="list-item" href="/components/card/card.html">Card</a>
+            <a class="list-item" href="/components/image/image.html">Image</a>
+            <a class="list-item" href="/components/input/input.html">Input</a>
+            <a
+              class="list-item"
+              href="/components/textUtilities/textUtilities.html"
+              >Text Utilities</a
+            >
+            <a class="list-item" href="/components/toast/toast.html">Toast</a>
+            <a class="list-item" href="/components/list/list.html">List</a>
+            <a class="list-item" href="/components/ratings/ratings.html"
+              >Ratings</a
+            >
+            <a class="list-item" href="/components/navigation/navigation.html"
+              >Navigation</a
+            >
+            <a class="list-item active" href="/components/modal/modal.html"
+              >Modal</a
+            >
+            <a class="list-item" href="/components/grid/grid.html"
+              >Simple grid</a
+            >
+            <a class="list-item" href="/components/slider/slider.html"
+              >Slider</a
+            >
+          </ul>
+        </div>
+      </aside>
+      <main class="p-2">
+        <h1>Modal</h1>
+        <p>
+          Modals are used to display content in a layer above the app. This
+          paradigm is used in cases such as the creation or editing of a record,
+          as well as various types of messaging
+        </p>
+        <h2>Validation modal</h2>
+        <div class="actualExamplesContainer justify-around">
+          <div class="modal p-relative bg-gray-200">
+            <button id="modalClearBtn" class="material-icons top-right-minus">
+              clear
+            </button>
+            <form class="d-flex flex-column">
+              <label class="font-size-regular font-weight-600" for="Username"
+                >Name</label
+              >
+              <input class="input-outline" type="text" id="Username" />
+            </form>
+            <form class="d-flex flex-column">
+              <label class="font-size-regular font-weight-600" for="Username"
+                >Email</label
+              >
+              <input class="input-outline" type="text" id="username" />
+            </form>
+            <button class="btn btn-primary font-size-regular">Log In</button>
+            <button class="btn btn-outline font-size-regular">Sign up</button>
+          </div>
+
+          <!-- <button id="modalBtn" class="btn btn-primary">open modal</button> -->
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f5762845bab0013d9940e"
+          style="width: 100%; height: 255px"
+          frameborder="0"
+        ></iframe>
+      </main>
+    </div>
+  </body>
+</html>

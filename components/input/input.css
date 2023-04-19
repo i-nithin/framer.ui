@@ -1,0 +1,52 @@
+.input-parent{
+    display: flex;
+    position: relative;
+    max-width: 22rem;
+    min-height:  3.5rem;
+}
+
+.input-label{
+    font-size: 0.875rem;
+    height: fit-content;
+    position: absolute;
+    top: .2rem;
+    left: 0rem;
+    padding-left: .5rem;
+}
+
+.input-outline{
+    border: .18rem solid var(--gray-300);
+    border-radius: 6px;
+    font-size: 1.125rem;
+    padding: 9px;
+}
+.input-filled{
+    border: none;
+    box-sizing: content-box;
+    padding: 1rem 1rem 3rem .5rem;
+    font-size: inherit;
+    padding-bottom: 0;
+    border-radius: 4px 4px 0px 0px;
+    outline: 0;
+}
+.input-textarea{
+    height: 10.5rem;
+    width: 20rem;
+    border-radius: 5px;
+    border: 2px solid var(--gray-300);
+}
+
+.input-filled.primary{
+    background-color: var(--primary-color-200);
+    border-bottom: 3px solid var(--primary-color-400);
+}
+
+.input-filled.sucess{
+    background-color: var(--green-200);
+    border-bottom: 3px solid var(--green-500);
+}
+
+.input-filled.error{
+    background-color: var(--red-200);
+    border-bottom: 3px solid var(--red-500);
+}

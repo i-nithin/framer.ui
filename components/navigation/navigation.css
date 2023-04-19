@@ -1,0 +1,36 @@
+.nav-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray-200);
+    padding: 0px 0.75rem;
+}
+
+.nav-left{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+.searchbar-input{
+    padding: 10px;
+    width: 12rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--white);
+}
+
+.searchbar-icon{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.nav-right{
+    display: flex;
+    flex-basis: fit-content;
+    padding: 5px;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 7px;
+}

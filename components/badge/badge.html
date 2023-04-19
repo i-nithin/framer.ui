@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>framer.ui Badge</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://neonui.netlify.app/css/main.css" />
+    <script src="/js/index.js" defer></script>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/docsite/docsite.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/index.html">
+          <div class="nav-logo">framer.ui</div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="/docsite/docsite.html">Documentation</a></li>
+          <li>
+            <a target="_blank" href="https://github.com/i-nithin/framer.ui"
+              >Github</a
+            >
+          </li>
+          <li><button id="menuBtn" class="material-icons">menu</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="d-grid-sidebar-1fr">
+      <aside>
+        <div class="sidebar">
+          <ul class="sidebarList">
+            <a class="list-item" href="/docsite/docsite.html">Installation</a>
+            <a class="list-item" href="/components/alert/alert.html">Alert</a>
+            <a class="list-item" href="/components/avatar/avatar.html"
+              >Avatar</a
+            >
+            <a class="list-item active" href="/components/badge/badge.html"
+              >Badge</a
+            >
+            <a class="list-item" href="/components/button/button.html"
+              >Button</a
+            >
+            <a class="list-item" href="/components/card/card.html">Card</a>
+            <a class="list-item" href="/components/image/image.html">Image</a>
+            <a class="list-item" href="/components/input/input.html">Input</a>
+            <a
+              class="list-item"
+              href="/components/textUtilities/textUtilities.html"
+              >Text Utilities</a
+            >
+            <a class="list-item" href="/components/toast/toast.html">Toast</a>
+            <a class="list-item" href="/components/list/list.html">List</a>
+            <a class="list-item" href="/components/ratings/ratings.html"
+              >Ratings</a
+            >
+            <a class="list-item" href="/components/navigation/navigation.html"
+              >Navigation</a
+            >
+            <a class="list-item" href="/components/modal/modal.html">Modal</a>
+            <a class="list-item" href="/components/grid/grid.html"
+              >Simple grid</a
+            >
+            <a class="list-item" href="/components/slider/slider.html"
+              >Slider</a
+            >
+          </ul>
+        </div>
+      </aside>
+      <main class="p-2">
+        <h1>Badges</h1>
+        <p>
+          Badges can contain text, Small numerical value or status descriptor
+          for UI elements.
+        </p>
+        <h2>Badges with icon</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <div class="badge-parent">
+            <span class="material-icons"> shopping_cart </span>
+            <div class="badge-with-icon">5</div>
+          </div>
+
+          <div class="badge-parent">
+            <span class="material-icons"> mail </span>
+            <div class="badge-with-icon">45</div>
+          </div>
+
+          <div class="badge-parent">
+            <span class="material-icons"> favorite_border </span>
+            <div class="badge-with-icon">3</div>
+          </div>
+
+          <div class="badge-parent">
+            <span class="material-icons"> notifications_none </span>
+            <div class="badge-with-icon">1</div>
+          </div>
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3b8542e8de00130a6eb6"
+          style="width: 100%; height: 333px"
+          frameborder="0"
+        ></iframe>
+
+        <h2>Text Badges</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <div class="badge-text bg-green-200 color-green-600">
+            <span class="material-icons badge-icon"> task_alt </span>Done
+          </div>
+          <div class="badge-text bg-warn-200 color-warn-600">
+            <span class="material-icons badge-icon"> pending </span>In-Process
+          </div>
+          <div class="badge-text bg-red-200 color-red-600">
+            <span class="material-icons badge-icon"> remove_circle </span>Not
+            done
+          </div>
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3bb942e8de00130a6eb7"
+          style="width: 100%; height: 125px"
+          frameborder="0"
+        ></iframe>
+
+        <h2>Badges with avatar</h2>
+        <div class="actualExamplesContainer gap-2 justify-around">
+          <div class="badge-parent">
+            <img
+              class="square-sm br-round"
+              src="/src/img/maleavatar.svg"
+              alt="no"
+            />
+            <div class="badgesFor-status bg-red-600"></div>
+          </div>
+          <div class="badge-parent">
+            <img
+              class="square-md br-round"
+              src="/src/img/maleavatar.svg"
+              alt="no"
+            />
+            <div
+              class="badgesFor-status badgesFor-status-md square-xs bg-warn-600"
+            ></div>
+          </div>
+          <div class="badge-parent">
+            <img
+              class="square-lg br-round"
+              src="/src/img/maleavatar.svg"
+              alt="no"
+            />
+            <div
+              class="badgesFor-status badgesFor-status-lg bg-green-600"
+            ></div>
+          </div>
+        </div>
+        <iframe
+          src="https://www.thiscodeworks.com/embed/643f3be742e8de00130a6eb8"
+          style="width: 100%; height: 242px"
+          frameborder="0"
+        ></iframe>
+      </main>
+    </div>
+  </body>
+</html>
